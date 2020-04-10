@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/daftarFilm">
+
+    <fragment
+        android:id="@+id/daftarFilm"
+        android:name="org.d3if1071.myapplication.view.DaftarFilm"
+        android:label="fragment_daftar_film"
+        tools:layout="@layout/fragment_daftar_film" >
+        <action
+            android:id="@+id/action_daftarFilm_to_detailFilm"
+            app:destination="@id/detailFilm" />
+        <action
+            android:id="@+id/action_daftarFilm_to_about2"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFilm"
+        android:name="org.d3if1071.myapplication.view.DetailFilm"
+        android:label="fragment_detail_film"
+        tools:layout="@layout/fragment_detail_film" />
+    <fragment
+        android:id="@+id/about"
+        android:name="org.d3if1071.myapplication.About"
+        android:label="About" />
+</navigation>
