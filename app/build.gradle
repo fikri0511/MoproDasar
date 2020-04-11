@@ -50,5 +50,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.1'
 
+    // ViewModel
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+    //entity room
+    implementation "androidx.room:room-runtime:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+
 
 }
